@@ -3,8 +3,9 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
 } from 'react-router-dom';
+
+import Route from './Route';
 
 import Main from '../pages/Main';
 import Details from '../pages/Details';
