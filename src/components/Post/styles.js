@@ -22,7 +22,7 @@ export const Body = styled.p`
 
 export const Actions = styled.div`
     display: ${props => (props.showActions ? 'flex' : 'none')};
-    margin-top: 20px;
+    margin-top: 50px;
 `;
 
 export const StyledIconButton = styled(IconButton)`

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tooltip } from '@material-ui/core';
-import { FiTrash, FiEye } from 'react-icons/fi';
+import { FiTrash, FiMessageCircle } from 'react-icons/fi';
 
 import { Container, Title, Body, Actions, StyledIconButton } from './styles'
 
@@ -17,7 +17,7 @@ export default function Post({ title, body, onClickView, onClickDelete, showActi
                 </Tooltip>
                 <Tooltip title="view the post">
                     <StyledIconButton onClick={onClickView}>
-                        <FiEye />
+                        <FiMessageCircle />
                     </StyledIconButton>
                 </Tooltip>
             </Actions>

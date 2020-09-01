@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { List } from '@material-ui/core';
 
 export const Title = styled.h1`
     color: #00A0E4;
@@ -9,4 +10,12 @@ export const Title = styled.h1`
     @media (max-width: 768px) {
         text-align: center;
     }
+`;
+
+export const StyledList = styled(List)`
+    background: #eee;
+`;
+
+export const FilterContainer = styled.div`
+    width: 100%;
 `;

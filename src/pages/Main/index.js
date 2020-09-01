@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Container, List, ListItem } from '@material-ui/core';
+import { Container, List, TextField } from '@material-ui/core';
 
 import { getAllPosts, deletePost } from '../../services/api/post';
 
 import Post from '../../components/Post';
 
-import { Title } from './styles';
+import { Title, StyledList, FilterContainer } from './styles';
 
 export default function Main() {
     const [posts, setPosts] = useState([]);
@@ -43,7 +43,11 @@ export default function Main() {
 
             <Title>Posts</Title>
 
-            <List style={{ background: '#eee' }}>
+            <FilterContainer>
+                <TextField />
+            </FilterContainer>
+
+            <StyledList>
                 {posts.map(post => (
                     <Post
                         key={post.id}
@@ -54,7 +58,7 @@ export default function Main() {
                         onClickDelete={() => handleDelete(post)}
                     />
                 ))}
-            </List>
+            </StyledList>
 
         </Container>
     );
