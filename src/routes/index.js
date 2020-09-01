@@ -15,7 +15,7 @@ export default function Routes() {
         <Router>
             <Switch>
                 <Route path="/" exact component={Main} />
-                <Route path="/details" component={Details} />
+                <Route path="/details/:id" component={Details} />
             </Switch>
         </Router>
     )
