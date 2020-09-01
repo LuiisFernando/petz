@@ -19,3 +19,13 @@ export const StyledList = styled(List)`
 export const FilterContainer = styled.div`
     width: 100%;
 `;
+
+export const ButtonContainer = styled.div`
+    margin-top: 20px;
+`;
+
+export const CounterPost = styled.p`
+    margin: 10px 0;
+    color: #6E6E6E;
+    font-size: 14px;
+`;
