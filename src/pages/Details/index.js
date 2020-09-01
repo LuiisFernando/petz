@@ -25,14 +25,15 @@ export default function Details(props) {
     const { post } = props.location.state;
 
 
-    async function loadCommentByPost() {
-        const response = await getAllCommentsByPost(id);
-        setComments(response.comments);
-    }
-
+    
     useEffect(() => {
+        async function loadCommentByPost() {
+            const response = await getAllCommentsByPost(id);
+            setComments(response.comments);
+        }
+
         loadCommentByPost();
-    }, []);
+    }, [id]);
 
     function goBack() {
         history.push('/');

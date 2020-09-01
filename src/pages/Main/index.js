@@ -42,7 +42,7 @@ export default function Main() {
 
     useEffect(() => {
         loadPostByCallback();
-    }, []);
+    }, [loadPostByCallback]);
 
     useEffect(() => {
         function filterPosts() {
@@ -53,7 +53,7 @@ export default function Main() {
         }
 
         filterPosts();
-    }, [filterText]);
+    }, [filterText, posts]);
 
 
     function handleClick(post) {
