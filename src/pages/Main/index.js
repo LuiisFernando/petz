@@ -67,10 +67,10 @@ export default function Main() {
     }
 
     function logicalExclusion(id) {
-        var clonedPosts = [...posts];
+        var clonedPosts = [...filteredPosts];
         var postsWithoutDeletedPost = clonedPosts.filter(x => x.id !== id);
 
-        setPosts(postsWithoutDeletedPost);
+        setFilteredPosts(postsWithoutDeletedPost);
     }
 
     function handleSubmit({ filter }) {
