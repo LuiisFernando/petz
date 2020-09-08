@@ -8,7 +8,7 @@
 
 - O projeto utiliza o pacote react-router-dom para roterizar as paginas existentes no sistema e criar uma rota padrão contendo os componentes comuns em todas as telas, no caso o componente de Menu.
 
-- O projeto esta hospedado no vercel.com, antigo Netfly. link da aplicação https://petz-tau.vercel.app/
+- O projeto esta hospedado no vercel.com. link da aplicação https://petz-tau.vercel.app/
 
 Para inicar o sistema siga os seguintes passos.
 
